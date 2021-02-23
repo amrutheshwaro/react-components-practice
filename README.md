@@ -1,2 +1,2 @@
-# react-components-practice
+# react-styling-practice
 Created with CodeSandbox
