@@ -7,32 +7,6 @@
 //Morning = red, Afternoon = green, Night = blue.
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
-var customStyle = {
-  color: "red"
-};
-
-var hour = new Date().getHours();
-var greet;
-switch (hour) {
-  case 0:
-    greet = "Good morning!";
-    break;
-  case 12:
-    greet = "Good afternoon!";
-    customStyle.color = "green";
-    break;
-  case 18:
-    greet = "Good night!";
-    customStyle.color = "blue";
-    break;
-  default:
-    break;
-}
-
-ReactDOM.render(
-  <h1 className="heading" style={customStyle}>
-    {greet}
-  </h1>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
